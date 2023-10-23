@@ -38,7 +38,7 @@ li a {
 }
 li .ver-mas{
     text-decoration: none;
-    background-color: #007bff;
+    background-color: #1d1db6;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -46,7 +46,7 @@ li .ver-mas{
 }
 
 li .ver-mas:hover {
-    background-color: #0056b3;
+    background-color: #1d1db6;
     cursor: pointer;
 }
 
@@ -57,7 +57,7 @@ li i {
 
 
 .header {
-    background-color: rgba(0, 0, 255, 0.774);
+    background-color: #1d1db6;
     width: 100vw;
     height: 4rem;
     display: flex;
@@ -67,12 +67,14 @@ li i {
 }
 
 .titulo {
-    color: yellow;
+    font-family: 'Kanit', sans-serif;
+    color: #d1bf00;
     font-size: 24px; 
 }
 
 .subtitulo {
-    color: yellow;
+    
+    color: #d1bf00;
     font-size: 12px; 
 }
 
@@ -140,7 +142,7 @@ li i {
     bottom: 0;
 }
 .agregar{
-    background-color: #007bff;
+    background-color: #1d1db6;
     padding: 5px;
     border-radius: 5px;
     margin: 5px;
@@ -169,11 +171,12 @@ ol {
     
 .preciototal{
     
-    background-color: blue;
-    color: rgb(230, 230, 126);
+    background-color: #1d1db6;
+    color: #d1bf00;
 }
 
 .finalizarCompra{
+    font-family: 'Kanit', sans-serif;
     background-color:green;
     color: white;
     padding: 15px;
@@ -213,14 +216,14 @@ ol {
 }
 
 footer{
-    background-color:rgba(255, 255, 0, 0.699);
+    background-color:#d1bf00;
     width:100%;
     height: 20px;
 }
 
 .detalleOculto {
     display: none;
-    background-color: yellow;
+    background-color: #d1bf00;
     max-width: 500px; 
     height: auto; 
     position: absolute;
@@ -271,7 +274,7 @@ footer{
 }
 
 .descripcionDetalle{
-    background-color: #007bffd7;
+    background-color: #1d1db6;
     color: white;
     width: 80%;
     height: 100%;
@@ -283,7 +286,7 @@ footer{
 }
 
 .agregarDetalle{
-    background-color: #007bff;
+    background-color: #1d1db6;
     border-radius: 15px;
     display: flex;
     font-size: 20px;
@@ -298,7 +301,10 @@ footer{
 }
 
 .agregarDetalle:hover{
-    background-color: #f1d03d;
+    background-color: #d1bf00;
     color: black;
     
+}
+.olCarrito{
+    font-family: 'Kanit', sans-serif;
 }
