@@ -1,6 +1,6 @@
 [
-    {
-        "id": 1,
+    {   
+        "id":1,
         "nombre": "Camiseta titular",
         "precio": 30000,
         "imagen": "./assets/img/camiseta-boca-betsson-300x300.png",
@@ -8,7 +8,7 @@
         "marca": "Adidas"
     },
     {
-        "id": 2,
+        "id":2,
         "nombre": "Short titular",
         "precio": 17000,
         "imagen": "./assets/img/short-boca-titular-300x300.png",
@@ -16,7 +16,7 @@
         "marca": "Adidas"
     },
     {
-        "id": 3,
+        "id":3,
         "nombre": "Camiseta suplente",
         "precio": 27000,
         "imagen": "./assets/img/camiseta-suplente-boca-300x300.png",
@@ -24,31 +24,31 @@
         "marca": "Adidas"
     },
     {
-        "id": 4,
+        "id":4,
         "nombre": "Short suplente",
         "precio": 15000,
         "imagen": "./assets/img/short-boca-suplente-300x300.png",
-        "descripcion": "Short alternativo de Boca Juniors. Poseen paneles de malla para ventilación y cortes laterales para brindar comodidad dentro y fuera de la cancha. Incorporan tecnología de absorción AEROREADY que se encarga de mantener tu piel seca sin importar si estás jugando un partido con amigos o alentando a tu club desde la tribuna. Hecho con materiales 100% reciclados, este producto representa solo una de nuestras soluciones para acabar con los residuos plásticos",
+        "descripcion": "Short alternativo de Boca Juniors. Poseen paneles de malla para ventilación y cortes laterales para brindar comodidad dentro y fuera de la cancha. Incorporan tecnología de absorción AEROREADY que se encarga de mantener tu piel seca sin importar si estás jugando un partido con amigos o alentando a tu club desde la tribuna. Hecho con materiales 100% reciclados, este producto representa solo una de nuestras soluciones para acabar con los residuos plásticos" ,
         "marca": "Adidas"
     },
     {
-        "id": 5,
-        "nombre": "Buzo de entrenamiento",
+        "id":5,
+        "nombre": "Buzo entrenamiento",
         "precio": 29999,
         "imagen": "./assets/img/buzo-entrenamiento-300x300.png",
         "descripcion": "La Bombonera es testigo a toda la acción. Pero es en el campo de entrenamiento en donde verdaderamente se define el marcador. Hecho para jóvenes- este buzo de entrenamiento de fútbol adidas en tejido absorbente está basado en el que usan los jugadores de Boca Juniors mientras se preparan para enfrentar a sus rivales. Tiene aberturas para el pulgar en los puños para mantener las mangas en su lugar y protegerte más del frío.",
         "marca": "Adidas"
     },
     {
-        "id": 6,
+        "id":6,
         "nombre": "Buzo mujeres",
-        "precio": 285000,
+        "precio": 28500,
         "imagen": "./assets/img/buzo-boca-mujeres-300x300.png",
         "descripcion": "Entrená como si fueras una de las estrellas de Boca Juniors. Este buzo de entrenamiento de fútbol adidas es otra versión de la camiseta que usan los jugadores del club. La tecnología de absorción AEROREADY mantiene tu cuerpo seco sin importar cuánto te esforcés. El escudo del club te recuerda a dónde podés llegar si entrenás.",
         "marca": "Adidas"
     },
     {
-        "id": 7,
+        "id":7,
         "nombre": "Buzo gris",
         "precio": 24000,
         "imagen": "./assets/img/buzo-boca-gris-300x300.png",
@@ -56,11 +56,12 @@
         "marca": "Adidas"
     },
     {
-        "id": 8,
+        "id":8,
         "nombre": "Camperon",
         "precio": 45000,
         "imagen": "./assets/img/camperon-boca-300x300.png",
         "descripcion": "Cuando el clima no esté de tu lado, usá esta campera de invierno de fútbol adidas. Cuenta con aislamiento térmico, como capucha con forro de felpa y dobladillo alargado, para que mantengás el frío a raya. El escudo y los colores de Boca Juniors brillarán hasta en los días más fríos.",
         "marca": "Adidas"
     }
+    
 ]
