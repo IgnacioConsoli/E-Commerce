@@ -191,7 +191,20 @@ list-style: none;
 padding: 0;
 margin: 0; 
 }
-
+.disminuir{
+    padding: 1px;
+    background-color: #f7f7f7;
+    font-size: 25px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+.aumentar{
+    padding: 1px;
+    background-color: #f7f7f7;
+    font-size: 20px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
 .preciototal {
 background-color: #1d1db6;
 color: rgb(230, 230, 126);

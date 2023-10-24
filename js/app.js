@@ -1,5 +1,3 @@
-//Variables:
-
 const catalogo = async () => {
     try {
     const respuesta = await fetch("data/productos.json");
@@ -28,12 +26,12 @@ catalogo()
 document.addEventListener("DOMContentLoaded", () => {
     const productosContainer = document.querySelector("ul");
 
-    // Cargar productos desde el archivo JSON
+
     fetch("data/productos.json")
     .then((response) => response.json())
     .then((productos) => {
         productos.forEach((producto, index) => {
-          // Crear un elemento <li> para cada producto
+        
         const li = document.createElement("li");
 
         const nombre = document.createElement("h3");
@@ -44,13 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
         marca.textContent = producto.marca;
         li.appendChild(marca);
 
-          // Crear la imagen
+
         const img = document.createElement("img");
         img.src = producto.imagen;
         img.alt = producto.nombre;
         li.appendChild(img);
 
-          // Crear el título del producto
+
         const h3 = document.createElement("h3");
         h3.textContent = "$" + producto.precio.toLocaleString("es-AR");
         li.appendChild(h3);
@@ -58,14 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const agregarAlCarrito = document.createElement("button");
         agregarAlCarrito.textContent = "Agregar al Carrito";
         agregarAlCarrito.classList.add("agregar");
-          agregarAlCarrito.setAttribute("data-product-id", index); // Usaremos el índice del producto como ID
+          agregarAlCarrito.setAttribute("data-product-id", index);
 
-          // AGREGAR AL CARRITO:
+
         agregarAlCarrito.onclick = function agregarAlCarrito() {
         
             const productoCopia = { ...producto };
 
-            // Agrega la copia al carrito
+
             carrito.push(productoCopia);
             actualizarContadorCarrito()
             guardarCarritoEnLocalStorage()
@@ -78,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
             carritoMostrar.push(producto.nombre);
             });
 
-            const olCarrito = document.getElementsByClassName("olCarrito")[0]; // Obtén el primer elemento de la colección
+            const olCarrito = document.getElementsByClassName("olCarrito")[0]; 
 
             if (olCarrito) {
             carritoMostrar.forEach((nombre) => {
@@ -90,17 +88,17 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         li.appendChild(agregarAlCarrito);
 
-          // Crear el botón "Ver más"
+
         const verMasBtn = document.createElement("button");
         verMasBtn.textContent = "Ver mas...";
-        verMasBtn.setAttribute("data-product-id", index); // Usaremos el índice del producto como ID
+        verMasBtn.setAttribute("data-product-id", index); 
         verMasBtn.classList.add("ver-mas");
         verMasBtn.onclick= () =>{
             verMas(producto)
         }
         li.appendChild(verMasBtn);
 
-          // Agregar el <li> al contenedor de productos
+
         productosContainer.appendChild(li);
         });
     })
@@ -111,11 +109,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function verMas(producto) {
     const productoAMostrar = document.querySelector(".detalleOculto");
-    
-    // Limpia el contenido previo del elemento
     productoAMostrar.innerHTML = '';
     
-    // Crea elementos para mostrar la información del producto
+    
     const nombreElement = document.createElement('h2');
     nombreElement.textContent = producto.nombre;
     nombreElement.classList = "nombreDetalle"
@@ -152,10 +148,10 @@ function verMas(producto) {
     for (let i = 0; i < carritoDOM.length; i++) {
         carritoDOM[i].style.display = "none";
     }
-      // Haz una copia del producto
+
     const productoCopia = { ...producto };
 
-      // Agrega la copia al carrito
+
     carrito.push(productoCopia);
     actualizarContadorCarrito()
 
@@ -167,7 +163,7 @@ function verMas(producto) {
         carritoMostrar.push(producto.nombre);
     });
 
-      const olCarrito = document.getElementsByClassName("olCarrito")[0]; // Obtén el primer elemento de la colección
+      const olCarrito = document.getElementsByClassName("olCarrito")[0]; 
 
     if (olCarrito) {
         carritoMostrar.forEach((nombre) => {
@@ -179,14 +175,14 @@ function verMas(producto) {
     };
     
 
-    // Agrega los elementos al elemento con clase "detalleOculto"
+
     productoAMostrar.appendChild(nombreElement);
     productoAMostrar.appendChild(precioElement);
     productoAMostrar.appendChild(imagenElement);
     productoAMostrar.appendChild(descripcionElement);
     productoAMostrar.appendChild(botonCerrar)
     productoAMostrar.appendChild(botonAgregar)
-    // Muestra el elemento con la información del producto
+
     productoAMostrar.style.display = 'block';
 }
 

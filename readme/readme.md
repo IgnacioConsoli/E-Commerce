@@ -1,32 +1,40 @@
-linea 28: este evento espera a que la página web se cargue por completo, luego captura el primer elemento "ul". 
-
-linea 32: hice un fetch de los productos del json, para hacer un forEach de los productos y asi crear cada "li", "h3", "img"
-
-linea 55: toLocalString ("es-AR") esta línea de código se encarga de mostrar el precio del producto con el símbolo de pesos utilizando el estilo de numeracion utilizado en argentina.
-
-linea 58: se creo un boton con una clase y su indice sera su ID
-
-linea 64: a ese mismo boton le agregue el evento "onclick" para que al apretarlo, todos los elementos con la clase "carrito oculto"  se oculten, luego creo una copia del producto selecionado lo pusheo y actualizo el contador del carrito 
-
-linea 84: obtengo el elemento "ol" mediante su calse, para hacer un forEach de mi carrito y agregar un "li" por cada producto que haya en el carrito
-
-linea 97: creo el boton de "ver mas" con una clase y un indice y le agrego el evento "onclick" para que al apretarlo me muestre los detalles del producto
-
-linea 113: esta función crea un nuevo elemento "li" de productos en el carrito de compras, incluyendo su nombre, precio y un botón para eliminarlo.
-
-linea 130: esta funcion busca el índice del producto en el array "carrito" basándose en el nombre del producto. Si lo encuentra y el indice es mayor a -1, lo elimina del carrito, actualiza el contador del carrito y muestra el carrito de compras nuevamente.
-
-linea 143: esta linea de codigo lo que hace es ocultar o mostrar los elementos con la clase "carritoOculto" 
-
-linea 159: esta linea lo que hace es pushear el precio de los productos al carrito y sumarlos para obtener un precio final
-
-linea 164: hice un condicional para que cuando el carrito este vacio se cree una "p" que diga "carrito vacio", y si hay productos dentro, mostrar los poroductos
-
-linea 178: cree un boton para simular una compra, al cliquearlo salta una alerta que dice "compra realizada con exito" y luego recargue la pagina nuevamente
-
-linea 190: hice una funcion para que el contador del carrito se actualice a la cantidad de productos que hay en el carrito
-
-linea 197: cree un funcion para que al apretar "ver mas" se creen los elementos "h2, p, button, img" y muestren los detalles del producto deseado
+                                             app.js:
 
 
-linea 232: creo un boton de agregar al carrito dentro de los detalles del producto, a ese boton le agrego la misma funcion ya creada anteriormente para agregar al carrito 
+
+linea 26: este evento espera a que la página web se cargue por completo, luego captura el primer elemento "ul". 
+
+linea 30: hice un fetch de los productos del json, para hacer un forEach de los productos y asi crear cada "li", "h3", "img"
+
+linea 53: toLocalString ("es-AR") esta línea de código se encarga de mostrar el precio del producto con el símbolo de pesos usando el estilo de numeracion utilizado en argentina.
+
+linea 56: se creo un boton con una clase y su indice sera su ID
+
+linea 62: a ese mismo boton le agregue el evento "onclick" para que al apretarlo, se haga una copia del producto,  se pushee la copia al local storage, se altualiza el contador y mediante un foreach obtengo el elemento "ol" para agregarle un "li" por cada producto en el carrito 
+
+
+linea 92: creo el boton de "ver mas" con una clase y un indice y le agrego el evento "onclick" para que al apretarlo me muestre los detalles del producto
+
+linea 110: la funcion verMas hace q al apretar el boton ver mas crea un "h2, p, img, boton" para mostrar los detalles del producto, tambien al apretar el boton agregar al carrito agrega el producto al carrito dentro de los detalles 
+
+
+
+                                                      cart.js:
+
+linea 4: funcion para cargar el carrito desde el "localStorage"
+
+linea 14: funcion para cargar el carrito desde el "localStorage"
+
+linea 19: funcion para eliminar todos los productos del carrito  
+
+linea 31: funcion que comprueba si el producto ya existe en el carrito, si el producto ya existe, encuentra el elemento en el carrito y actualiza la cantidad, si el producto no existe, crea un nuevo elemento en el carrito. Tambien crea dos botones para disminuir y aumentar la cantidad de productos, ademas agrega un contador de cantidad
+
+linea 87: esta funcion hace que cuando hay menos de un producto en el carrito elimina su li
+
+linea 98: esta funcion lo que hace es: sumar los precios de los productos, mostrar una "p" que dice carrito vacio si no hay ningun producto dentro de el, crea un li con el precio total de la compra, crea un boton para finalizar la compra que devuelve una alerta q dice compra realizada con exito y vacia el carrito, y por ultimo crea un boton que al apretarlo se borran todos los productos dentro del carrito 
+
+linea 155: esta funcion actualiza el contador del carrito y devuelve la longitud del carrito
+
+linea 163 y 170: son dos funciones, 1 para aumentar la camntidad de productos aprentando el + y otra para disminuir la cantidad de productos apretando el -
+
+
